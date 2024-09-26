@@ -15,11 +15,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <!-- Esta linea de abajo es para la pantalla 3 del piano, cuando se ejecute esa pantalla
-            hay que descomentar la linea y meterla dentro del activity-->
+            <!-- La linea de abajo es para la pantalla 3 del piano,
+            antes de ejecutarla hay que descomentar la linea y meterla dentro del activity-->
 
-            <!-- android:screenOrientation="landscape"-->
-
+            <!-- android:screenOrientation="landscape" -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

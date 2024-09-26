@@ -12,9 +12,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        //requestedOrientation=ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-        setContentView(R.layout.pantalla4)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.pantalla4)) { v, insets ->
+        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.pantalla2)
+        // Antes de ejecutar la "pantalla3" mirar el AndroidManifest!
+        //setContentView(R.layout.pantalla3)
+        //setContentView(R.layout.pantalla4)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.activity_main)) { v, insets ->
+        //ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.pantalla2)) { v, insets ->
+        //ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.ex3)) { v, insets ->
+        //ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.pantalla4)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
